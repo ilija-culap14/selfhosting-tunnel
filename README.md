@@ -30,4 +30,4 @@ On your HomeServer:
 On your VPS:
    podman build . -t tunnel-agent
 
-Then you need to create podman/docker networks on both machines (You can actually use default "podman" network, but separating traffic is better idea). For all networks you need to specify IP range. On your VPS you need one network. You can name it "net-proxy" for example. On your VPS you need a network so tunnel-client and target container (nextcluod, vaultwarden, wordpress etc.) can communicate. You can call this network "net-tun1". For every other service (target container i. e. SSH-Tunnel) you need new network.
+Then you need to create podman/docker networks on both machines (You can actually use default "podman" network, but separating traffic is better idea). For all networks you need to specify IP range. On your VPS you need one network. You can name it "proxynetwork" for example. On your VPS you need a network so tunnel-client and target container (nextcluod, vaultwarden, wordpress etc.) can communicate. You can call this network "tun-net1". For every other service (target container i. e. SSH-Tunnel) you need new network.
