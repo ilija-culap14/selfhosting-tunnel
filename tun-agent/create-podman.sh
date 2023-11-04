@@ -1,6 +1,6 @@
 #!/bin/bash
 # IP of Tunnel-Agent: 10.55.55.3
-# IP of HTTP-Proxy: 10.55.55.2 (vaultwarden, nextcloud etc.)
+# IP of HTTP-Proxy: 10.55.55.2 (nginx proxy manager)
 
 podman run -d --name tun-ag1 \
  --network proxynetwork:ip=10.55.55.3 -p 50080:22/tcp --hostname tun-ag1 \
