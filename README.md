@@ -13,4 +13,4 @@ The goal of this project ist to create reverse SSH tunnel (with 2 podman/docker 
 8. Tell proxy-manager to use IP and Port (specified in .sh/.container file) of your tunnel-agent
 9. Create SSL certificates for your service
 
-![Alt text]("https://github.com/ilija-culap14/selfhosting-tunnel/blob/500f9be33446a1f072251be3608b7044c3280616/examples/vps_homeserver.png)
+![Example with 2 tunnels and 2 possibilities for HomeLab Networking](https://github.com/ilija-culap14/selfhosting-tunnel/blob/f4981b5c9f0f15358fb34744a3b3816b85d5ce96/examples/vps_homeserver.png)
