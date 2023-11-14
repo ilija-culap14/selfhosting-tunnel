@@ -2,7 +2,7 @@
 Description=Tunnel-Agent (Example)
 
 [Container]
-Image=tun-agent:latest
+Image=tunnel-agent:latest
 Volume=/var/podman/tun-ag1/pubkey:/root/.ssh/authorized_keys:z
 Network=proxynetwork:ip=XX.XX.XX.XX
 HostName=tunnel-agent-1
