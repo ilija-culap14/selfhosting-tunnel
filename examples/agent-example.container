@@ -1,0 +1,17 @@
+[Unit]
+Description=Tunnel-Agent (Example)
+
+[Container]
+Image=tun-agent:latest
+Volume=/var/podman/tun-ag1/pubkey:/root/.ssh/authorized_keys:z
+Network=proxynetwork:ip=XX.XX.XX.XX
+HostName=tunnel-agent-1
+AutoUpdate=local
+PublishPort=50080:22/tcp
+
+[Service]
+Restart=always
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target
